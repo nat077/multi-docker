@@ -12,7 +12,7 @@ after_success:
   - docker build -t nat_077/multi-worker ./worker
 # Login to docker hub
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push nat_077/multi-client
-  - docker push nat_077/multi-nginx
-  - docker push nat_077/multi-server
-  - docker push nat_077/multi-worker
+  - docker push nat077/multi-client
+  - docker push nat077/multi-nginx
+  - docker push nat077/multi-server
+  - docker push nat077/multi-worker
